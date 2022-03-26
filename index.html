@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css1.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="background">	
+<!-- Nav Bar -->
+	<nav class="nav">
+		<img class="banner" src="footerpic.png">
+	  <div class="menu-wrap">
+	    <input type="checkbox" class="toggler">
+	    <div class="hamburger"><div></div></div>
+	    <div class="menu">
+	      <div>
+	        <div>
+	          <ul>
+	            <li><a href="https://evolutionbcl.co.uk/">Dance Wear</a></li>
+	            <li><a href="https://evolutionworkwear.co.uk/">Work Wear</a></li>
+	            <li><a href="#">School Wear</a></li>
+	            <li><a href="https://www.linkedin.com/in/will-b-057810195/">Handsome lad</a></li>
+	          </ul>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+		
+<!-- Slideshow -->
+	<div class="slideshow-container">
+
+		<!-- Full-width images with number-->
+	  <div class="mySlides fade">
+	    <div class="numbertext">1 / 8</div>
+	    <img class="logo"src="hat.png" style="width:100%">    
+	  </div>
+
+	  <div class="mySlides fade">
+	    <div class="numbertext">2 / 8</div>
+	    <img class="logo"src="Mamma.png" style="width:100%">
+	  </div>
+
+	  <div class="mySlides fade">
+	    <div class="numbertext">3 / 8</div>
+	    <img class="logo"src="machine.png" style="width:100%">
+	  </div>
+
+	  <div class="mySlides fade">
+	    <div class="numbertext">4 / 8</div>
+	    <img class="logo"src="Hiviz.png" style="width:100%">
+	  </div>
+
+	  <div class="mySlides fade">
+	    <div class="numbertext">5 / 8</div>
+	    <img class="logo"src="picme1.png" style="width:100%">
+	  </div>
+
+	  <div class="mySlides fade">
+	    <div class="numbertext">6 / 8</div>
+	    <img class="logo"src="picme2.png" style="width:100%">
+	  </div>
+
+	  <div class="mySlides fade">
+	    <div class="numbertext">7 / 8</div>
+	    <img class="logo"src="https://cdn.discordapp.com/attachments/185480534380511233/957396025310584832/received_635440354023516.gif" style="width:100%">
+	  </div>
+
+	  <div class="mySlides fade">
+	    <div class="numbertext">8 / 8</div>
+	     <img class="logo"src="picme3.png" style="width:100%">
+	  </div>
+	</div>
+<script type = "text/javascript">
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	// Next/previous controls
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+	// Thumbnail image controls
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if(n > slides.length) {
+	    slideIndex = 1
+	  }
+	  if(n < 1) {
+	    slideIndex = slides.length
+	  }
+	  for(i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";
+	  }
+	  for(i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex - 1].style.display = "block";
+	  dots[slideIndex - 1].className += " active";
+	} </script>
+<script type = "text/javascript">
+	  var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  for(i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";
+	  }
+	  slideIndex++;
+	  if(slideIndex > slides.length) {
+	    slideIndex = 1
+	  }
+	  slides[slideIndex - 1].style.display = "block";
+	  setTimeout(showSlides, 5000); // Change image every 2 seconds
+	} 
+</script>
+<!-- Boxes 	-->		
+	<div class="container-box">
+		<a href=""><img class="img"  src="work.png"></a>
+		<a href=""><img class="img"  src="work.png"></a>
+		<a href=""><img class="img"  src="work.png"></a>
+		<a href=""><img class="img"  src="work.png"></a>
+	</div>
+</div>
+<!-- Footer -->
+	<footer>
+		<div class="footer">
+			<img src="footerpic.png" class="footer">
+			<p class="footer">
+				Telephone: 01843 44 64 59<br>
+				Unit X6 Continental Approach. Westwood Industrial Estate.<br>
+				Margate. Kent. CT9 4JG
+			</p>
+			<!-- Socials -->
+				<img class="social"src="facebook1.png"></li>
+				<img class="social"src="instagram1.png"></li>
+				<img class="social"src="linkedin1.png"></li>
+
+		</div>
+	</footer>
+
+</body>
+</html>
